@@ -22,10 +22,7 @@ const Form : FC = () => {""
         </form>
         <ul>
             {todos.map((todo, index) => (
-                <li key={index}>
-			{todo}
-			<button onClick={() => setTodos(todos.filter((_, i) => i !== index))}>Delete</button>
-		</li>
+                <li key={index}>{todo}</li>
             ))}
         </ul>
     </div>
